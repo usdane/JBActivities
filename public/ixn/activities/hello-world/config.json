@@ -1,8 +1,13 @@
+var image40 = '{{ICON}}';
+var image15 = '{{ICONSMALL}}'
+var image40string = {images/:[image40]};
+var image15string = {images/:[image15]};
+
 {
    "workflowApiVersion": "1.0",
    "metaData": {
-       "icon": "images/sensi40.png",
-       "iconSmall": "images/sensi15.png",
+       "icon": "[image40string]",
+       "iconSmall": "[image15string]",
        "category": "message",
 	   "isConfigured":true
    },
