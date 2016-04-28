@@ -1,13 +1,20 @@
-var image40 = "{{ICON}}";
-var image15 = "{{ICONSMALL}}";
-var image40string = {images/:[image40]};
-var image15string = {images/:[image15]};
+var image40= {"path":"images/","large":"{{ICON}}"};
+var concat1="";
+  $.each(json,function(key,value){
+  append+=value;
+  });
+
+var image40= {"path":"images/","large":"{{ICONSMALL}}"};
+var concat2="";
+  $.each(json,function(key,value){
+  append+=value;
+  });
 
 {
    "workflowApiVersion": "1.0",
    "metaData": {
-       "icon": "[image40string]",
-       "iconSmall": "[image15string]",
+       "icon": "[concat1]",
+       "iconSmall": "[concat2]",
        "category": "message",
 	   "isConfigured":true
    },
