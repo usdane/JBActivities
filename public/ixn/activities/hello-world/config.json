@@ -1,5 +1,5 @@
-var image40 = '{{ICON}}';
-var image15 = '{{ICONSMALL}}'
+var image40 = "{{ICON}}";
+var image15 = "{{ICONSMALL}}";
 var image40string = {images/:[image40]};
 var image15string = {images/:[image15]};
 
