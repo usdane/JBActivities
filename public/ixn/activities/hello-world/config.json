@@ -1,8 +1,8 @@
 {
    "workflowApiVersion": "1.0",
    "metaData": {
-       "icon": "images/mailbox3_40.png",
-       "iconSmall": "images/mailbox3_15.png",
+       "icon": "images/tv1_40.png",
+       "iconSmall": "images/tv1_15.png",
        "category": "message",
 	   "isConfigured":true
    },
