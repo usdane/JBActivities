@@ -1,8 +1,8 @@
 {
    "workflowApiVersion": "1.0",
    "metaData": {
-       "icon": "images/tv2_40.png",
-       "iconSmall": "images/tv2_15.png",
+       "icon": "images/pandora_40.png",
+       "iconSmall": "images/pandora_15.png",
        "category": "message",
 	   "isConfigured":true
    },
