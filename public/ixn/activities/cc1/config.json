@@ -1,0 +1,38 @@
+{
+   "workflowApiVersion": "1.0",
+   "metaData": {
+       "icon": "../images/callcenter_40.png",
+       "iconSmall": "../images/callcenter_15.png",
+       "category": "message",
+	   "isConfigured":true
+   },
+   "type": "REST",
+   "lang": {
+       "en-US": {
+           "name": "{{ACTIVITY_NAME}}",
+           "description": "{{ACTIVITY_DESCRIPTION}}"
+       }
+   },
+   "arguments": {
+       "execute": {
+           "url": "https://{{APP_NAME}}.herokuapp.com/ixn/activities/{{CHANNEL_NAME}}/execute"
+       }
+   },
+   "configurationArguments": {
+       "applicationExtensionKey": "{{KEY}}",
+       "save": {
+           "url": "https://{{APP_NAME}}.herokuapp.com/ixn/activities/{{CHANNEL_NAME}}/save"
+       },
+       "publish": {
+           "url": "https://{{APP_NAME}}.herokuapp.com/ixn/activities/{{CHANNEL_NAME}}/publish"
+       },
+       "validate": {
+           "url": "https://{{APP_NAME}}.herokuapp.com/ixn/activities/{{CHANNEL_NAME}}/validate"
+       }
+   },
+   "edit": {
+		"url": "https://{{APP_NAME}}.herokuapp.com/ixn/activities/{{CHANNEL_NAME}}/",
+		"height": 250,
+		"width": 600
+	}
+}
