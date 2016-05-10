@@ -15,23 +15,23 @@
    },
    "arguments": {
        "execute": {
-           "url": "https://{{APP_NAME}}.herokuapp.com/ixn/activities/cc1/execute"
+           "url": "https://{{APP_NAME}}.herokuapp.com/ixn/activities/{{CHANNEL_NAME}}/execute"
        }
    },
    "configurationArguments": {
        "applicationExtensionKey": "{{KEY}}",
        "save": {
-           "url": "https://{{APP_NAME}}.herokuapp.com/ixn/activities/cc1/save"
+           "url": "https://{{APP_NAME}}.herokuapp.com/ixn/activities/{{CHANNEL_NAME}}/save"
        },
        "publish": {
-           "url": "https://{{APP_NAME}}.herokuapp.com/ixn/activities/cc1/publish"
+           "url": "https://{{APP_NAME}}.herokuapp.com/ixn/activities/{{CHANNEL_NAME}}/publish"
        },
        "validate": {
-           "url": "https://{{APP_NAME}}.herokuapp.com/ixn/activities/cc1/validate"
+           "url": "https://{{APP_NAME}}.herokuapp.com/ixn/activities/{{CHANNEL_NAME}}/validate"
        }
    },
    "edit": {
-		"url": "https://{{APP_NAME}}.herokuapp.com/ixn/activities/cc1/",
+		"url": "https://{{APP_NAME}}.herokuapp.com/ixn/activities/{{CHANNEL_NAME}}/",
 		"height": 250,
 		"width": 600
 	}
