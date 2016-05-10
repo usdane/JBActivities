@@ -13,9 +13,9 @@ var config      = require('./config/default');
 var parseString = require('xml2js').parseString;
 var fs = require('fs');
 
-var configjson  = require('./public/ixn/activities/{{CHANNEL_NAME}}/config.json');
+var configjson  = require('./public/ixn/activities/hello-world/config.json');
 var indexhtml;
-fs.readFile('./public/ixn/activities/{{CHANNEL_NAME}}/index.html', "utf-8", function(err, html) {
+fs.readFile('./public/ixn/activities/hello-world/index.html', "utf-8", function(err, html) {
 	var configVars = ['ACTIVITY_NAME','ACTIVITY_DESCRIPTION','REQUEST_METHOD','REQUEST_URL'];
 	if (!process.env.ACTIVITY_NAME) process.env.ACTIVITY_NAME = 'HTTP Request Activity';
 	if (!process.env.ACTIVITY_DESCRIPTION) process.env.ACTIVITY_DESCRIPTION = 'This Activity will make a user-defined Http Request.';
@@ -80,16 +80,16 @@ app.post('/logout', routes.logout );
 
 
 // Custom Hello World Activity Routes
-app.post('/ixn/activities/{{CHANNEL_NAME}}/save', activity.save );
-app.post('/ixn/activities/{{CHANNEL_NAME}}/validate', activity.validate );
-app.post('/ixn/activities/{{CHANNEL_NAME}}/publish', activity.publish );
+app.post('/ixn/activities/hello-world/save', activity.save );
+app.post('/ixn/activities/hello-world/validate', activity.validate );
+app.post('/ixn/activities/hello-world/publish', activity.publish );
 
 //setup middleware for Marketing Cloud API calls:
 //app.post('/ixn/activities/hello-world/execute/', tokenFromJWT, activity.execute );
-app.post('/ixn/activities/{{CHANNEL_NAME}}/execute', activity.execute );
+app.post('/ixn/activities/hello-world/execute', activity.execute );
 
 //replace template values with environment variables.
-app.get( '/ixn/activities/{{CHANNEL_NAME}}/config.json', function( req, res ) {
+app.get( '/ixn/activities/hello-world/config.json', function( req, res ) {
 	var appName = 'APP_NAME';
 	var actKey = 'KEY';
 	var actName = 'ACTIVITY_NAME';
@@ -111,10 +111,10 @@ app.get( '/ixn/activities/{{CHANNEL_NAME}}/config.json', function( req, res ) {
 });
 
 //replace template values with environment variables.
-app.get( '/ixn/activities/{{CHANNEL_NAME}}/index.html', function( req, res ) {
+app.get( '/ixn/activities/hello-world/index.html', function( req, res ) {
 	res.status(200).send( indexhtml );		
 });
-app.get( '/ixn/activities/{{CHANNEL_NAME}}/', function( req, res ) {
+app.get( '/ixn/activities/hello-world/', function( req, res ) {
 	res.status(200).send( indexhtml );		
 });
 
