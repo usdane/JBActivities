@@ -1,8 +1,8 @@
 {
    "workflowApiVersion": "1.0",
    "metaData": {
-       "icon": "images/callcenter_40.png",
-       "iconSmall": "images/callcenter_15.png",
+       "icon": "images/dm-blue-icon-40.png",
+       "iconSmall": "images/dm-blue-icon-15.png",
        "category": "message",
 	   "isConfigured":true
    },
