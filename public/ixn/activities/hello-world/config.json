@@ -1,8 +1,8 @@
 {
    "workflowApiVersion": "1.0",
    "metaData": {
-       "icon": "images/SASLogo_40.png",
-       "iconSmall": "images/SASLogo_15.png",
+       "icon": "images/directmail_40.png",
+       "iconSmall": "images/directmail_15.png",
        "category": "message",
 	   "isConfigured":true
    },
